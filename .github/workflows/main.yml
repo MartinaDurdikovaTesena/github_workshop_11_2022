@@ -27,6 +27,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PROMENA: BATMAN
+      VAR: $MY_SECRET
     steps:
       - name: ukazka promene
-        run: echo $PROMENA    
+        run: |
+          echo $PROMENA
+          echo $VAR
